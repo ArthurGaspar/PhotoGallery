@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YoPo</title>
+    <link href="PhotoGallery.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="csms">Photo Gallery</h1>
+        <p class="csms">Click on any category to filter pictures</p>
+        <!-- Button Section -->
+        <div class="buttonline">
+            <button data-filter="people" class="button active">People</button>
+            <button data-filter="animals" class="button">Animals</button>
+            <button data-filter="places" class="button">Places</button>
+            <button data-filter="screenshots" class="button">Screenshots</button>
+            <button data-filter="nature" class="button">Nature</button>
+            <button data-filter="daylight" class="button">Daylight</button>
+            <button data-filter="night" class="button">Night</button>
+            <button data-filter="memes" class="button">Memes</button>
+            <button data-filter="art" class="button">Art</button>
+            <button data-filter="sports" class="button">Sports</button>
+            <button data-filter="food" class="button">Food</button>
+            <button data-filter="favorites" class="button">Favorites</button>
+        </div>
+        <hr>
+    </header>
+
+    <main>
+        <!-- Image Section -->
+        <section id="photo-container">
+            <div class="photo-wrapper portrait visible" data-category="people places daylight">
+                <img title="Feelin' gorgeous!" src="Imgs/Img1.jpg">
+            </div>
+            <div class="photo-wrapper portrait visible" data-category="people night">
+                <img title="At the club" src="Imgs/Img2.jpg">
+            </div>
+            <div class="photo-wrapper portrait visible" data-category="people daylight favorites">
+                <img title="My favorite girls S2" src="Imgs/Img3.jpg">
+            </div>
+            <div class="photo-wrapper landscape visible" data-category="people daylight">
+                <img title="Sunnyside up!" src="Imgs/Img4.jpg">
+            </div>
+            <div class="photo-wrapper portrait visible" data-category="people places">
+                <img title="São Paulo, Brazil" src="Imgs/Img5.jpg">
+            </div>
+            <div class="photo-wrapper landscape visible" data-category="people daylight favorites">
+                <img title="Memorable" src="Imgs/Img6.jpg">
+            </div>
+            <div class="photo-wrapper portrait hidden" data-category="animals">
+                <img title="Bob and Jeremy!" src="Imgs/Img7.jpg" hidden="true">
+            </div>
+            <div class="photo-wrapper landscape hidden" data-category="animals places nature daylight">
+                <img title="Spotted a lot of flamingos on the zoo, couldn't mind taking a picture..." src="Imgs/Img8.jpg">
+            </div>
+            <div class="photo-wrapper landscape visible" data-category="people animals places nature daylight">
+                <img title="My sisters! Lol" src="Imgs/Img9.jpg">
+            </div>
+            <div class="photo-wrapper portrait hidden" data-category="places daylight">
+                <img title="Cantina" src="Imgs/Img10.jpg">
+            </div>
+            <div class="photo-wrapper portrait hidden" data-category="places night">
+                <img title="One in a million" src="Imgs/Img11.jpg">
+            </div>
+            <div class="photo-wrapper portrait hidden" data-category="places art">
+                <img title="12/05" src="Imgs/Img12.jpg">
+            </div>
+            <div class="photo-wrapper portrait hidden" data-category="screenshots">
+                <img title="Why is my Instagram like this? PS: It's my secondary test account!" src="Imgs/Img13.jpg">
+            </div>
+            <div class="photo-wrapper landscape hidden" data-category="screenshots memes">
+                <img title="LOL" src="Imgs/Img14.jpg">
+            </div>
+            <div class="photo-wrapper square hidden" data-category="screenshots">
+                <img title="idk, lol" src="Imgs/Img15.jpg">
+            </div>
+            <div class="photo-wrapper portrait hidden" data-category="places nature daylight">
+                <img title="Cantina plants" src="Imgs/Img16.jpg">
+            </div>
+            <div class="photo-wrapper portrait hidden" data-category="places nature daylight">
+                <img title="There is a light that never goes out..." src="Imgs/Img17.jpg">
+            </div>
+            <div class="photo-wrapper portrait hidden" data-category="places nature daylight">
+                <img title="I want one" src="Imgs/Img18.jpg">
+            </div>
+            <div class="photo-wrapper portrait hidden" data-category="places daylight">
+                <img title="paradise" src="Imgs/Img19.jpg">
+            </div>
+            <div class="photo-wrapper landscape visible" data-category="people places daylight favorites">
+                <img title="just vibin' on the rooftops" src="Imgs/Img20.jpg">
+            </div>
+            <div class="photo-wrapper portrait hidden" data-category="places daylight">
+                <img title="Crystal clear" src="Imgs/Img21.jpg">
+            </div>
+            <div class="photo-wrapper portrait hidden" data-category="places night">
+                <img title="21/10" src="Imgs/Img22.jpg">
+            </div>
+            <div class="photo-wrapper portrait hidden" data-category="places night">
+                <img title="Great night!" src="Imgs/Img23.jpg">
+            </div>
+            <div class="photo-wrapper portrait hidden" data-category="night favorites">
+                <img title="The moon knows everything" src="Imgs/Img24.jpg">
+            </div>
+            <div class="photo-wrapper portrait hidden" data-category="memes">
+                <img title="Didn't know grandpa was a NERD! LOL" src="Imgs/Img25.jpg">
+            </div>
+            <div class="photo-wrapper square hidden" data-category="memes">
+                <img title="Literally me!" src="Imgs/Img26.jpg">
+            </div>
+            <div class="photo-wrapper square hidden" data-category="memes">
+                <img title="Hahahahaah!" src="Imgs/Img27.jpg">
+            </div>
+            <div class="photo-wrapper portrait hidden" data-category="art">
+                <img title="At the museum." src="Imgs/Img28.jpg">
+            </div>
+            <div class="photo-wrapper portrait hidden" data-category="art">
+                <img title="29/03" src="Imgs/Img29.jpg">
+            </div>
+            <div class="photo-wrapper portrait visible" data-category="people art">
+                <img title="My BFF is a real artist!" src="Imgs/Img30.jpg">
+            </div>
+            <div class="photo-wrapper landscape visible" data-category="people sports">
+                <img title="Me and the girls at the volleyball!" src="Imgs/Img31.jpg">
+            </div>
+            <div class="photo-wrapper portrait visible" data-category="people sports">
+                <img title="that was harder than it looks" src="Imgs/Img32.jpg">
+            </div>
+            <div class="photo-wrapper landscape hidden" data-category="night sports">
+                <img title="My first soccer match!" src="Imgs/Img33.jpg">
+            </div>
+            <div class="photo-wrapper portrait hidden" data-category="food">
+                <img title="Diety" src="Imgs/Img34.jpg">
+            </div>
+            <div class="photo-wrapper portrait hidden" data-category="food">
+                <img title="Yummy..." src="Imgs/Img35.jpg">
+            </div>
+            <div class="photo-wrapper portrait hidden" data-category="food">
+                <img title="I miss some mexican food..." src="Imgs/Img36.jpg">
+            </div>
+            <div class="photo-wrapper landscape hidden" data-category="night">
+                <img title="May save for later" src="Imgs/Img37.jpg">
+            </div>
+        </section>
+    </main>
+</body>
+<script src="PhotoGallery.js"></script>
+</html>
