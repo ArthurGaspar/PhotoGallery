@@ -1,23 +1,52 @@
 /* BUTTON CATEGORIES CSS */
 
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+header {
+    padding: 25px;
+    margin: 20px;
+}
+
+h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 48px;
+    font-weight: bolrgb(0, 0, 0);
+    color: black;
+}
+
+p {
+    font-size: 18px;
+}
+
 .csms {
-    font-family: Comic Sans MS;
+    font-family: Arial, sans-serif;
+    text-align: center;
 }
 
 .buttonline {
-    width: 770px;
-    background-color: rgb(0, 0, 0);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
 }
 
 button {
-    color: rgb(0, 0, 0);
+    color: white;
     background-color: rgb(128, 115, 91);
-    font-family:Comic Sans MS;
+    border: 2px solid rgb(99, 89, 64);
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 button:hover {
-    color: rgb(0, 0, 0);
     background-color: rgb(197, 184, 159);
+    transform: scale(1.1);
 }
 
 hr {
@@ -26,12 +55,74 @@ hr {
 }
 
 .active {
-    background-color: rgb(253, 231, 134);
+    background-color: rgb(190, 127, 9);
 }
 
 .active:hover {
-    background-color: rgb(255, 247, 219);
+    background-color: rgb(228, 163, 43);
 }
+
+button::before {
+    content: "";
+    position: relative;
+    left: -5px;
+    top: 0%;
+    transform: translateY(-50%);
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 18px;
+}
+
+/* Custom icons for each button */
+button[data-filter="people"]::before {
+    content: "\f183";
+}
+
+button[data-filter="animals"]::before {
+    content: "\f6d3";
+}
+
+button[data-filter="places"]::before {
+    content: "\f3c5";
+}
+
+button[data-filter="screenshots"]::before {
+    content: "\f030";
+}
+
+button[data-filter="nature"]::before {
+    content: "\f06c";
+}
+
+button[data-filter="daylight"]::before {
+    content: "\f185";
+}
+
+button[data-filter="night"]::before {
+    content: "\f186";
+}
+
+button[data-filter="memes"]::before {
+    content: "\f599";
+}
+
+button[data-filter="art"]::before {
+    content: "\f53f";
+}
+
+button[data-filter="sports"]::before {
+    content: "\f1e3";
+}
+
+button[data-filter="food"]::before {
+    content: "\f787";
+}
+
+button[data-filter="favorites"]::before {
+    content: "\f005";
+}
+
+
 
 /* IMAGE + DIV CSS */
 
@@ -53,18 +144,35 @@ hr {
 .photo-wrapper {
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
+    position: relative;
 }
 
 .landscape:hover {
     transform: scale(1.1);
+    transition: transform 0.3s ease;
 }
 
 .portrait:hover {
     transform: scale(1.06);
+    transition: transform 0.3s ease;
 }
 
 .square:hover {
     transform: scale(1.06);
+    transition: transform 0.3s ease;
+}
+
+figcaption {
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    text-align: center;
 }
     
 .photo-wrapper.visible.portrait {
